@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		3569AA422D1B1F1700AE4090 /* WeSplitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3569AA422D1B1F1700AE4090 /* WeSplitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WeSplitApp.app; path = "/Users/fnayres/Documents/Swift Learning/WeSplitApp/build/Debug-iphoneos/WeSplitApp.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				3569AA442D1B1F1700AE4090 /* WeSplitApp */,
-				3569AA432D1B1F1700AE4090 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		3569AA432D1B1F1700AE4090 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3569AA422D1B1F1700AE4090 /* WeSplitApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +86,7 @@
 			mainGroup = 3569AA392D1B1F1700AE4090;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 3569AA432D1B1F1700AE4090 /* Products */;
+			productRefGroup = 3569AA392D1B1F1700AE4090;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
