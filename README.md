@@ -38,35 +38,6 @@ Follow these steps to set up and run the project:
 3. Click "Next," choose a location to save the project, and click "Create."
 4. Open the project in Xcode and begin editing the code.
 
-## Building the Project
-
-The app is constructed in three stages:
-
-### 1. Introduction to Techniques
-
-Learn the following SwiftUI components and techniques:
-
-- Text fields for user input.
-- Pickers for selecting tip percentages.
-- State variables to track changes.
-- Basic layouts using VStack, HStack, and Form.
-
-### 2. Step-by-Step Guide
-
-Apply the techniques learned to:
-
-- Create the main interface for the app.
-- Handle user inputs dynamically.
-- Calculate the amount owed per person based on the inputs.
-
-### 3. Challenges
-
-Expand the app by completing the following tasks:
-
-1. Add validation for user inputs to prevent errors (e.g., negative numbers).
-2. Include a currency formatter for better clarity.
-3. Provide an option to round the total amount per person.
-
 ## License
 
 This project is released under the MIT License. See `LICENSE` for details.

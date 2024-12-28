@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var checkAmount = 0.0
     @State private var numberOfPeople = 2
     @State private var tipPercentage = 20
+    @State private var errorMessage = ""
     @FocusState private var amountIsFocused: Bool
     
     
@@ -26,13 +27,28 @@ struct ContentView: View {
         return amountPerPerson
         
     }
+   
+    
     var body: some View {
         NavigationStack{
             Form{
-                Section{
-                    TextField("Amount", value: $checkAmount, format: .currency(code: Locale.current.currency?.identifier ?? "BRL"))
+                VStack{
+                    TextField("Amount", value: $checkAmount,format: .currency(code: Locale.current.currency?.identifier ?? "BRL"))
+                        .onChange(of: checkAmount) { newValue in
+                            if newValue <= 0 {
+                                errorMessage = "Amount must be greater than zero."
+                            } else {
+                                errorMessage = ""
+                            }
+                        }
                         .keyboardType(.decimalPad)
                         .focused($amountIsFocused)
+
+                    if !errorMessage.isEmpty{
+                        Text(errorMessage)
+                            .foregroundStyle(.blue)
+                            .fontWeight(.bold)
+                    }
                     
                     Picker("Number of People", selection: $numberOfPeople){
                         ForEach(2..<100){
